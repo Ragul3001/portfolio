@@ -16,6 +16,7 @@
             padding: 5px;
             width: 300px;
             font-size: small;
+            font-weight:bolder;
             border-right: 1px solid;
 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +25,7 @@
 
         .right {
             background-color: rgb(246, 213, 223);
+            font-weight:500;
 
 
         }
@@ -40,16 +42,35 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
+            margin-left: 70px;
+            margin-top: 30px;
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+        .images:hover {
+            opacity: 0.5;
         }
 
         .name {
-            margin-left: 31px;
+            margin-left: 100px;
         }
 
         .link:hover {
             cursor: pointer;
             color: white;
         }
+        .num:hover {
+            cursor: pointer;
+            font-weight:bolder;
+        }
+        .email:hover {
+             cursor: pointer;
+             font-weight:bolder;
+             color:red;
+        }
+        
+        
     </style>
 </head>
 
@@ -59,7 +80,7 @@
             <div style=" margin-left: 15px" ;>
                 <img src="../images/image.jpeg" class="images">
                 <h4 class="name">Ragul P</h4>
-                <div class="link">linkedin.com/in/johndoe</p>
+                <div class="link" style="margin-left: 50px;">linkedin.com/in/johndoe</p>
                 </div>
                 <hr style="height:1px; background:black; border:none;">
                 <div>
@@ -97,8 +118,8 @@
                         style="font-size: medium;background-color: black;color: white;padding: 5px;margin-right: 50px;border-radius: 3px;">
                         <b><i><u>Contact Me</u></i></b></p>
                     <div>My address,abc,chennai city</div><br>
-                    <div>email-ragulp12@gmail.com</div><br>
-                    <div>+91 4321 6574</div>
+                    <div class="email">email-ragulp12@gmail.com</div><br>
+                    <div class="num">+91 4321 6574</div>
 
                 </div>
             </div>
@@ -106,10 +127,10 @@
         <div class="right">
             <div style="margin-left: 20px;">
                 <h3
-                    style="background-color: black;color:white;padding: 20px;text-align: center;margin-right: 20px;border-radius: 5px;">
+                    style="background-color: burlywood;color:black;padding: 20px;text-align: center;margin-right: 20px;border-radius: 5px;margin-bottom: 30px;box-shadow: 10px 10px;text-shadow: 1px 1px 2px white, 0 0 25px red, 0 0 5px darkblue;">
                     PORTFOLIO</h3>
                 <p
-                    style="font-size: medium;background-color:black;color:white;padding: 5px;margin-right: 50px;border:1px solid;border-radius: 3px;">
+                    style="font-size: medium;background-color:black;color:white;padding: 5px;margin-right: 50px;border:1px solid;border-radius: 3px;margin-top: 20px;">
                     <b><i>About Me</i></b></p>
                 <div>I am a student of abc college ,I am a second year student.I am learning now html & Css.I completed
                     2 levels in C programming.System administration two levels completed. I am from abc district in
@@ -125,9 +146,29 @@
                     <button>Microcomputer Graphics/Mapping</button>
                 </div>
                 <hr style="height:2px; background:black; border:none;">
-                <p>>PROFESSIONAL EXPERIENCE</p> Computer Lab Assistant, Bellevue University, Bellevue NE (20xx – 20xx)
+                <p style="font-size: medium;background-color:black;color:white;padding: 5px;margin-right: 50px;border:1px solid;border-radius: 3px;"><b><i>PROFESSIONAL EXPERIENCE</b></i></p> 
+                Computer Lab Assistant, Bellevue University, Bellevue NE (20xx – 20xx)
                     Provided advice and guidance to junior college students on the effective use of PCs and various
-                    software applications. </div>
+                    software applications. 
+                <p style="font-size: medium;background-color:black;color:white;padding: 5px;margin-right: 50px;border:1px solid;border-radius: 3px;"><b><i>Reference</i></b></p>
+                <table>
+                    <tr>
+                        <td>
+                            <div><h4> <u>Estelle Darcy</u></h4></div>  
+                            <div style="margin-right: 20%;">Wardiere Inc/CEO</div>  
+                            <div class="num">Phone: +123 456 789</div>
+                            <div >Email: Darcy@gmail.com</div>
+                        </td>
+                        <td>
+                            <div><h4><u>Harper Russo</u></h4></div>  
+                            <div>Wardiere Inc/CEO</div>  
+                            <div class="num">Phone: +123 456 789</div>
+                            <div >Email: Russo@gmail.com</div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
            
 </body>
 
