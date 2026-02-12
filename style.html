@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            h3{
+                color:rgb(241, 69, 69);
+                text-align:center;
+            }
+            td,tr{
+                padding: 5px;
+               
+            }
+            div{
+                width: 300px;
+                margin: auto;
+            }
+            table{
+                width: 200px;
+                
+            }
+            .ft{
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <form method="get" style="width:fit-content;background-color:powderblue;" class="ft">
+            <table style="margin-left: 20px;">
+                <div><h3>Student Registration Form:</h3></div>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td>
+                        <input type="text" name="user_name" id="name" >
+                    </td>
+                </tr>    <br>
+
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td>
+                        <input type="date" name="user_dob" id="dob">
+                    </td></tr>
+
+                 <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                         <input type="number" name="user_phone" id="phone">
+                    </td>
+                </tr><br>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>
+                         <input type="email" name="user_email" id="email">
+                    </td>
+                </tr><br>
+
+                <tr>
+                    <td><label for="pass">Password:</label></td>
+                    <td>
+                         <input type="password" name="user_password" id="pass" required>
+                    </td>
+                </tr><br>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td>
+                         <textarea type="text" name="user_address" id="address"></textarea> 
+                    </td><br>
+                    
+                </tr><br>
+             
+                    <tr><td>
+                         <lable for="male">Male</lable><input type="radio" name="user_gender"  id="male">
+                    </td>
+                     <td>
+                        <lable for="female">Female</lable> <input type="radio" name="user_gender" id="female"> 
+                    </td></tr><br>
+
+                 <tr>
+                    <td>
+                        <button type="submit" onclick="alert('Are You sure to Submit')" value="submit">Submit</button> 
+                    </td>
+        
+                     <td>
+                        <button type="reset" value="reset">Clear</button> 
+                    </td>
+                </tr><br>
+
+            </table>
+        </form>
+        </div>
+    </body>
+</html>
